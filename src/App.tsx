@@ -11,7 +11,6 @@ type Filter = "all" | "active" | "completed";
 const STORAGE_KEY = "todo-app-items";
 
 export default function App() {
-  const num: number = "abc";
   const [todos, setTodos] = useState<Todo[]>(() => {
     try {
       const saved = localStorage.getItem(STORAGE_KEY);
